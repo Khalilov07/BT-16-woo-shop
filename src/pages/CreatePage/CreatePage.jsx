@@ -89,6 +89,7 @@ const CreateCard = () => {
                             <MenuItem value={"Свитшоты"}>Свитшоты</MenuItem>
                             <MenuItem value={"Кардиганы"}>Кардиганы</MenuItem>
                             <MenuItem value={"Толстовки"}>Толстовки</MenuItem>
+                            <MenuItem value={"Футболки"}>Футболки</MenuItem>
                         </Select>
                     </FormControl>
                 </Box>

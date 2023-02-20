@@ -13,11 +13,11 @@ const SinglePage = () => {
     useEffect(() => {
         axios.get(`http://localhost:3004/posts/${id}`)
             .then(res => setProduct(res.data))
-    }, [])
+    }, []) 
 
     return (
         <>
-            <SingleCard title={product.title} price={product.price} img={`.${product.img}`} key={product.id} />    
+            <SingleCard setProduct={setProduct} title={product.title} price={product.price} img={`.${product.img}`} key={product.id} />    
         </>
     );
 };

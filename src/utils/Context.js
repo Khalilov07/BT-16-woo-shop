@@ -53,6 +53,7 @@ export const Context = (props) => {
             .getProducts()
             .then(({ data }) => setClothes(data))
     }, [])
+    
     const value = {
         clothes,
         addBasket,

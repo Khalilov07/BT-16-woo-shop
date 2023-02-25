@@ -11,6 +11,7 @@ const SingleCard = ({ title, price, img, setProduct }) => {
     const { id } = useParams();
     const [editMode, setEditMode] = useState(false)
     const [newTitle, setNewTitle] = useState("")
+    const [newImg, setNewImg] = useState("")
     const [newPrice, setNewPrice] = useState(0)
     const navigate = useNavigate()
 
@@ -18,13 +19,14 @@ const SingleCard = ({ title, price, img, setProduct }) => {
         setEditMode(true)
         setNewTitle(title)
         setNewPrice(price)
+        setNewImg(img)
     }
 
     const changeProduct = () => {
         axios.put(`http://localhost:3004/posts/${id}`, {
             title : newTitle,
             price : newPrice,
-            img
+            img : newImg
         })
         .then(res => {
             setProduct(res.data)
@@ -47,6 +49,9 @@ const SingleCard = ({ title, price, img, setProduct }) => {
         <div className='single__card'>
             <div className="card__img">
                 <img src={img} alt="" />
+                <div className={styles.shopWrapper}>
+                        <h1>jdiawdaw</h1>
+                    </div>
             </div>
             <div className="card__descr">
                 <h1>{title}</h1>
@@ -68,6 +73,14 @@ const SingleCard = ({ title, price, img, setProduct }) => {
                                 style={{margin: "20px 0"}}
                                 label='Введите цену...'
                                 onChange={e => setNewPrice(e.target.value)}
+                                id='outlined-basic' variant="outlined"
+                            />
+                             <TextField
+                                type="text"
+                                value={newImg}
+                                style={{margin: "20px 0"}}
+                                label='Введите цену...'
+                                onChange={e => setNewImg(e.target.value)}
                                 id='outlined-basic' variant="outlined"
                             />
                             <Button
@@ -97,6 +110,7 @@ const SingleCard = ({ title, price, img, setProduct }) => {
                         </>
 
                     }
+                  
                 </div>
 
             </div>

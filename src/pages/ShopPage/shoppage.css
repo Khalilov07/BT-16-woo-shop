@@ -24,7 +24,7 @@
     transition: 0.5s;
     margin-bottom: 20px;
     text-decoration: none;
-    border: 1px solid black;
+    text-align: center;
     position: relative;
 }
 .count{
@@ -65,4 +65,11 @@
 .shop__lists li.active{
     background-color: black;
     color: wheat;
+}
+
+.button__card {
+    border: none;
+    background: white;
+    border: 1px solid black;
+    padding: 10px 18px;
 }

@@ -13,7 +13,7 @@ const Card = ({ item }) => {
                 <img src={item.img} alt="" />
             </Link>
 
-            <p>{item.title}</p>
+            <Link to={`/product/${item.id}`} style={{margin: "24px 0 7px", textDecoration: "none"}}>{item.title}</Link>
             <p>{item.price}$</p>
 
             {basket.findIndex(product => product.id === item.id) > -1
@@ -25,7 +25,7 @@ const Card = ({ item }) => {
                         {basket.find(product => product.id === item.id).count}
                     </div>
                 </div>
-                : <button onClick={() => addBasket(item)} type='button'>В корзину</button>
+                : <button className="button__card" onClick={() => addBasket(item)} type='button'>В корзину</button>
             }
         </div >
     );

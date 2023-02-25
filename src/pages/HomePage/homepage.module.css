@@ -1,0 +1,36 @@
+.newAdmission {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.leftAdmission {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftAdmission h1 {
+    font-size: 55px;
+}
+
+.leftAdmission p {
+    font-size: 20px;
+    text-align: end;
+    margin: 10px 0 52px;
+}
+
+.leftAdmission button {
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 22px 50px;
+    background: #6E9C9F;
+}
+
+.rightAdmission {
+    width: 30%;
+}

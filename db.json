@@ -1,20 +1,44 @@
 {
   "posts": [
     {
+      "title": "Футболка USA ",
+      "price": "250",
+      "img": "./images/img1.png",
+      "id": 1
+    },
+    {
       "title": "Футболка KGZ",
-      "price": "350",
+      "price": "230",
+      "category": "Свитшоты",
+      "img": "./images/img2.png",
       "id": 2
     },
     {
-      "title": "Футболка UZ",
-      "price": "300",
-      "img": ".undefined",
+      "title": "Футболка KZ",
+      "price": "222",
+      "category": "Толстовки",
+      "img": "./images/img3.png",
       "id": 3
     },
     {
-      "title": "dwa",
-      "img": ".../images/img1.png",
-      "id": 4
+      "title": "Футболка USA ",
+      "price": "250",
+      "img": "./images/img1.png",
+      "id": 1
+    },
+    {
+      "title": "Футболка KGZ",
+      "price": "230",
+      "category": "Свитшоты",
+      "img": "./images/img2.png",
+      "id": 2
+    },
+    {
+      "title": "Футболка KZ",
+      "price": "222",
+      "category": "Толстовки",
+      "img": "./images/img3.png",
+      "id": 3
     }
   ],
   "user": [

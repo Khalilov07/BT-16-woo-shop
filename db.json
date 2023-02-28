@@ -88,6 +88,12 @@
       "login": "TEST AKRAM",
       "password": "1234567",
       "id": 9
+    },
+    {
+      "email": "test123@gmail.com",
+      "login": "dwadaw",
+      "password": "12345678",
+      "id": 10
     }
   ]
 }

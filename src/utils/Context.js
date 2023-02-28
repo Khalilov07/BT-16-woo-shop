@@ -11,6 +11,7 @@ export const Context = (props) => {
     const [basket, setBasket] = useState([])
 
 
+
     const addBasket = (product) => {
         setBasket(prev => [...prev, {
             ...product,
@@ -51,7 +52,9 @@ export const Context = (props) => {
     useEffect(() => {
         productServices
             .getProducts()
-            .then(({ data }) => setClothes(data))
+            .then(({ data }) => {
+                setClothes(data)
+            })
     }, [])
     
     const value = {

@@ -37,6 +37,7 @@ const Header = () => {
                     <Link to="/contact">Контакты</Link>
                     <Link to="/create">Создать</Link>
                     <Link to="/reg">Регистрация</Link>
+                    <Link to="/login">Авторизация</Link>
                 </div>
                 <div onClick={() => navigate('/basket')} className="basket">
                     <p><span><img src="" alt="" /></span> +7 (495) 823-54-12</p>

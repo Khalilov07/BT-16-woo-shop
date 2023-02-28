@@ -1,13 +1,16 @@
 
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { CustomContext } from '../../utils/Context';
 import Card from '../../components/Card/Card';
 import styles from './homepage.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Audio } from 'react-loader-spinner';
 import 'swiper/css';
 
 const HomePage = () => {
+    
     const { clothes, addBasket } = useContext(CustomContext)
+
     return (
         <>
             <div className={styles.newAdmission}>
